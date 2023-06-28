@@ -35,3 +35,31 @@
 // getThis();
 
 // ################################################ //
+
+// agar this objectni ichida kelsa console ga nima chiqadi
+// const obj = {
+//   isName: "Elshod",
+//   getInfo: function () {
+//     console.log(this.isName);
+//   },
+// };
+// // this bu nimani ichida joylashgan bo'lsa shu objectni elementlarini olib beruvchi vosita
+// obj.getInfo();
+
+// ################################################ //
+// constructor function = konstruktor - quruvchi
+
+// bu qolip
+function Car(brand, model, price, year) {
+  this.brand = brand;
+  this.model = model;
+  this.price = price;
+  this.year = year;
+}
+// qolipni to'ldirish (instance)
+
+const Kia_stinger = new Car("Kia", "Stinger GT", "75000 $", "2024");
+const jentra = new Car("GM", "Jentra", "20000 $", "2023");
+
+console.log(Kia_stinger);
+console.log(jentra);
